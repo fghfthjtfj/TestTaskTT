@@ -1,0 +1,58 @@
+- model: main.menu
+  pk: 1
+  fields:
+    title: Главное меню
+- model: main.menuitem
+  pk: 7
+  fields:
+    menu: 1
+    parent: null
+    title: О нас
+    url: about
+    named_url: true
+    order: 0
+- model: main.menuitem
+  pk: 8
+  fields:
+    menu: 1
+    parent: null
+    title: Каталог
+    url: /catalog/
+    named_url: false
+    order: 1
+- model: main.menuitem
+  pk: 9
+  fields:
+    menu: 1
+    parent: 7
+    title: Команда
+    url: team
+    named_url: true
+    order: 0
+- model: main.menuitem
+  pk: 10
+  fields:
+    menu: 1
+    parent: 9
+    title: Команда о команде
+    url: team_about_team
+    named_url: true
+    order: 0
+- model: main.menuitem
+  pk: 11
+  fields:
+    menu: 1
+    parent: 7
+    title: Офисы
+    url: offices
+    named_url: true
+    order: 0
+- model: main.menuitem
+  pk: 12
+  fields:
+    menu: 1
+    parent: null
+    title: Контакты
+    url: contacts
+    named_url: true
+    order: 2
