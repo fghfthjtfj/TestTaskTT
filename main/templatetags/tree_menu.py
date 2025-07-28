@@ -13,7 +13,7 @@ def draw_menu(context, menu_name):
 
     items = list(MenuItem.objects.filter(menu__title=menu_name).order_by('order'))
     if not items:
-        return {'menu_items': []}
+        return {'menu_items': [], 'request': request}
 
     id_to_item = {item.id: item for item in items}
     tree = []
