@@ -1,0 +1,53 @@
+1. Скачайте проект git clone https://github.com/fghfthjtfj/TestTaskTT.git
+2. 
+3. Убедиться в доступности портов 80 и 8000.
+
+
+Запуск через докер.
+
+1. Собрать контейнер докера:
+
+docker compose build -d
+
+
+2. Создать суперпользователя django:
+   
+docker compose exec web bash
+
+python manage.py createsuperuser
+
+Ввести необходимые данные.
+
+
+3. Открыть сайт:
+В windows в браузере перейти по *ip-сервера*:80.
+В linux (на сервере) curl http://localhost/
+
+
+Запуск локально.
+
+1.Создать и активировать виртуальное окружение в директории backend:
+
+python -m venv venv
+
+2.Установить зависимости:
+
+pip install -r requirements.txt
+
+3.Создать базу данных и выполнить миграции (sqlite файл создаётся сам).
+
+python manage.py migrate
+
+4. Загрузить фикстуры:
+
+python manage.py loaddata  main/fixtures/main_fixture.yaml
+
+5. Создать суперпользователя django:
+
+python manage.py createsuperuser
+
+Ввести необходимые данные.
+
+6. Открыть сайт:
+
+Открыть ссылку http://127.0.0.1:8000
