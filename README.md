@@ -25,8 +25,10 @@ python manage.py createsuperuser
 exit
 
 4.Открыть сайт:
-В windows в браузере перейти по *ip-сервера*:80.
+В windows в браузере перейти по *ip-вашего-сервера*.
 В linux (на сервере) curl http://localhost/
+
+5.Админка доступна по пути - *ip-вашего-сервера*/admin
 
 
 Запуск локально.
@@ -56,3 +58,5 @@ python manage.py createsuperuser
 6.Открыть сайт:
 
 Открыть ссылку http://127.0.0.1:8000
+
+7.Админка доступна по пути - http://127.0.0.1:8000/admin
