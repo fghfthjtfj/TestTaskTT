@@ -1,6 +1,6 @@
-1. Скачайте проект git clone https://github.com/fghfthjtfj/TestTaskTT.git
+1.Скачайте проект git clone https://github.com/fghfthjtfj/TestTaskTT.git
 
-3. Убедиться в доступности портов 80 и 8000.
+Убедиться в доступности портов 80 и 8000.
 
 
 Запуск через докер.
