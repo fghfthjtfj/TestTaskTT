@@ -20,8 +20,11 @@ python manage.py createsuperuser
 
 Ввести необходимые данные.
 
+3.Выйти из ввода команд:
 
-3.Открыть сайт:
+exit
+
+4.Открыть сайт:
 В windows в браузере перейти по *ip-сервера*:80.
 В linux (на сервере) curl http://localhost/
 
