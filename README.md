@@ -9,7 +9,7 @@
 
 1.Собрать контейнер докера:
 
-docker compose build -d
+docker compose up --build -d
 
 
 2.Создать суперпользователя django:
